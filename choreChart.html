@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shull ChoreChart</title>
+</head>
+<body>
+    <h1>Shull ChoreChart</h1>
+    <h3>"Only the home can compare with the temple in sacredness."</h3>
+    <section>
+        <h2>
+            Today is <span id="day"></span>.
+            It is <span id="hours"></span>:<span id="minutes"></span>
+        </h2>
+        <p>
+            Who's list do you want? 
+            <select id="sortBy">
+                <option value="Meredith">Meredith</option>
+                <option value="Genevieve">Genevieve</option>
+                <option value="Elliott">Elliott</option>
+                <option value="Amylynne">Amylynne</option>
+                <option value="Everyone">Everyone</option>
+            </select>
+        </p>
+    </section>
+    <hr>
+    <section>
+    <div>
+       <label>Name:</label>
+       <span id="name"></span> 
+    </div>
+
+    <div>
+        <label id="chores">This Week's Chores:</label>
+        <ul id="choreList"></ul>
+    </div>
+
+    <div id="listentry" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="listInput" placeholder="Meal Plan...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myList">
+        </ul>
+    </section>
+    <script src="/week6/choreChart.js"></script>
+</body>
+</html>

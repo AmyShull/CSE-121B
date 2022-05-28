@@ -1,0 +1,12 @@
+/* When clicked on strike out text */
+ul li.checked {
+    text-decoration: line-through;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
