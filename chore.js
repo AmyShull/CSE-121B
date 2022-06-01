@@ -153,7 +153,15 @@ const sortBy = () => {
   buildJobList(job);
 };
 
-
+if (job = Chorelists.bathrooms) {
+  area = 'Bathrooms';
+}else if (job = Chorelists.firstFloor){
+  area = 'First Floor';
+}else if (job = Chorelists.kitchenLaundry){
+  area = 'Kitchen and Laundry';
+}else if (job = Chorelists.basementFloor){
+  area = 'Basement Floor';
+}
 
 
 function buildJobList(job) {
