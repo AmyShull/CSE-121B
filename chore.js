@@ -39,7 +39,7 @@ document.querySelector('#minutes').innerHTML = currentMinute;
 
 
 const choreWeek = document.querySelector('#choreList');
-const area = document.querySelector('#job');
+let area = document.querySelector('#job');
 
 //Chorelists
 let Chorelists = {
