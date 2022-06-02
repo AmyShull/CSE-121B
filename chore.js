@@ -84,63 +84,64 @@ const reset = () => {
 const sortBy = () => {
   reset();
   let job = [];
+  let x = d.getDate();
   switch (document.querySelector('#sortBy').value) {
     case 'Meredith':
-      if (d > 0 && d <= 7){
+      if (x > 0 && x <= 7){
           job = Chorelists.bathrooms;
           area = 'Bathrooms';
-      }else if (d >= 8 && d <= 14){
+      }else if (x >= 8 && x <= 14){
           job = Chorelists.firstFloor;
           area = 'First Floor';
-      }else if (d >= 15 && d <= 21){
+      }else if (x >= 15 && x <= 21){
           job = Chorelists.kitchenLaundry;
           area = 'Kitchen and Laundry';
-      }else if (d >= 22 && d <= 31){
+      }else if (x >= 22 && x <= 31){
           job = Chorelists.basementFloor;
           area = 'Basement Floor';
       }
     break;
     case 'Genevieve':
-      if (d > 0 && d <= 7){
+      if (x > 0 && x <= 7){
         job = Chorelists.firstFloor;
         area = 'First Floor';
-    }else if (d >= 8 && d <= 14){
+    }else if (x >= 8 && x <= 14){
       job = Chorelists.kitchenLaundry;
       area = 'Kitchen and Laundry';
-    }else if (d >= 15 && d <= 21){
+    }else if (x >= 15 && x <= 21){
       job = Chorelists.basementFloor;
       area = 'Basement Floor';
-    }else if (d >= 22 && d <= 31){
+    }else if (x >= 22 && x <= 31){
       job = Chorelists.bathrooms;
       area = 'Bathrooms';  
     }
     break;
     case 'Elliott':
-      if (d > 0 && d <= 7){
+      if (x > 0 && x <= 7){
         job = Chorelists.kitchenLaundry;
         area = 'Kitchen and Laundry';
-      }else if (d >= 8 && d <= 14){
+      }else if (x >= 8 && x <= 14){
         job = Chorelists.basementFloor;
         area = 'Basement Floor';
-      }else if (d >= 15 && d <= 21){
+      }else if (x >= 15 && x <= 21){
         job = Chorelists.bathrooms;
         area = 'Bathrooms';
-      }else if (d >= 22 && d <= 31){
+      }else if (x >= 22 && x <= 31){
         job = Chorelists.firstFloor;
         area = 'First Floor';  
       }
     break;
     case 'Amylynne':
-      if (d > 0 && d <= 7){
+      if (x > 0 && x <= 7){
         job = Chorelists.basementFloor;
         area = 'Basement Floor';
-      }else if (d >= 8 && d <= 14){
+      }else if (x >= 8 && x <= 14){
         job = Chorelists.bathrooms;
         area = 'Bathrooms';
-      }else if (d >= 15 && d <= 21){
+      }else if (x >= 15 && x <= 21){
         job = Chorelists.firstFloor;
         area = 'First Floor';  
-      }else if (d >= 22 && d <= 31){
+      }else if (x >= 22 && x <= 31){
         job = Chorelists.kitchenLaundry;
         area = 'Kitchen and Laundry';
       }
